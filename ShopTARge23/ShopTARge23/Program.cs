@@ -1,3 +1,7 @@
+using Microsoft.EntityFrameworkCore;
+using ShopTARge23.Data;
+
+
 namespace ShopTARge23
 {
     public class Program
@@ -8,6 +12,10 @@ namespace ShopTARge23
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            builder.Services.AddDbContext<ShopTARge23Context>(options =>
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+
 
             var app = builder.Build();
 
