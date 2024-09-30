@@ -1,5 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using ShopTARge23.Core.Domain;
+//using Microsoft.EntityFrameworkCore.Relational;
+//using Microsoft.Data.SqlClient;
 
 namespace ShopTARge23.Data
 {
@@ -10,6 +12,9 @@ namespace ShopTARge23.Data
 
         public DbSet<Spaceship> Spaceships { get; set; }
 
-
+        //protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //{
+        //    modelBuilder.Properties<DateTime>().Configure(c => c.HasColumnType("datetime2"));
+        //}
     }
 }
