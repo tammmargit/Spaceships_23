@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ZhC8Cr7vVUM=",
+  "dgSpecHash": "uB5A9aMNEoI=",
   "success": true,
-  "projectFilePath": "C:\\Users\\ruthp\\OneDrive\\Desktop\\Programmeerimine\\Spaceships\\ShopTARge23\\ShopTARge23\\ShopTARge23.csproj",
+  "projectFilePath": "C:\\Users\\ruthp\\OneDrive\\Desktop\\makidev\\Spaceships\\ShopTARge23\\ShopTARge23.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ruthp\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ruthp\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

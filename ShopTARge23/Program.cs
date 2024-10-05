@@ -3,7 +3,8 @@ using Microsoft.Extensions.FileProviders;
 using ShopTARge23.ApplicationServices.Services;
 using ShopTARge23.Core.ServiceInterface;
 using ShopTARge23.Data;
-
+using ShopTARge23.ApplicationServices.Services;
+using ShopTARge23.Core.ServiceInterface;
 
 namespace ShopTARge23
 {
@@ -17,11 +18,11 @@ namespace ShopTARge23
             builder.Services.AddControllersWithViews();
 
             builder.Services.AddScoped<ISpaceshipsServices, SpaceshipsServices>();
+            builder.Services.AddScoped<IKindergartensServices, KindergartensServices>();
             builder.Services.AddScoped<IFileServices, FileServices>();
 
             builder.Services.AddDbContext<ShopTARge23Context>(options =>
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
-
 
             var app = builder.Build();
 
