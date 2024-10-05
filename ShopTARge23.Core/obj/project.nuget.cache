@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "5ewI2JcL7WY=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ruthp\\OneDrive\\Desktop\\Programmeerimine\\Spaceships\\ShopTARge23\\ShopTARge23.Core\\ShopTARge23.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ruthp\\.nuget\\packages\\microsoft.aspnetcore.http.features\\5.0.17\\microsoft.aspnetcore.http.features.5.0.17.nupkg.sha512",
+    "C:\\Users\\ruthp\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.1\\microsoft.extensions.primitives.5.0.1.nupkg.sha512",
+    "C:\\Users\\ruthp\\.nuget\\packages\\system.io.pipelines\\5.0.2\\system.io.pipelines.5.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
