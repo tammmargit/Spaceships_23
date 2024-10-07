@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ShopTARge23.Core.Domain
+﻿namespace ShopTARge23.Models.RealEstates
 {
-    public class RealEstate
+    public class RealEstateIndexViewModel
     {
         public Guid? Id { get; set; }
         public double Size { get; set; }
