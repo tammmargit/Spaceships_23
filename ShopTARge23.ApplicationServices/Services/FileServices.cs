@@ -26,12 +26,12 @@ namespace ShopTARge23.ApplicationServices.Services
 
         public void FilesToApi(SpaceshipDto dto, Spaceship spaceship)
         {
-            if(!Directory.Exists(_webHost.ContentRootPath + "\\multipleFileUpload\\"))
+            if (!Directory.Exists(_webHost.ContentRootPath + "\\multipleFileUpload\\"))
             {
                 Directory.CreateDirectory(_webHost.ContentRootPath + "\\multipleFileUpload\\");
             }
 
-            foreach(var file in dto.Files)
+            foreach (var file in dto.Files)
             {
                 string uploadsFolder = Path.Combine(_webHost.ContentRootPath, "multipleFileUpload");
                 string uniqueFileName = Guid.NewGuid().ToString() + "_" + file.FileName;
@@ -55,7 +55,7 @@ namespace ShopTARge23.ApplicationServices.Services
 
         public async Task<List<FileToApi>> RemoveImagesFromApi(FileToApiDto[] dtos)
         {
-            foreach(var dto in dtos)
+            foreach (var dto in dtos)
             {
                 var imageId = await _context.FileToApis
                     .FirstOrDefaultAsync(x => x.ExistingFilePath == dto.ExistingFilePath);
@@ -73,6 +73,28 @@ namespace ShopTARge23.ApplicationServices.Services
             }
 
             return null;
+        }
+
+        public void UploadFilesToDatabase(RealEstateDto dto, RealEstate domain)
+        {
+            if (dto.Files != null && dto.Files.Count > 0)
+            {
+                foreach (var image in dto.Files)
+                {
+                    using (var target = new MemoryStream())
+                    {
+                        FileToDatabase files = new FileToDatabase()
+                        {
+                            Id = Guid.NewGuid(),
+                            ImageTitle = image.FileName,
+                            RealEstateId = domain.Id
+                        };
+                        image.CopyTo(target);
+                        files.ImageData = target.ToArray();
+                        _context.FileToDatabases.Add(files);
+                    }
+                }
+            }
         }
     }
 }
