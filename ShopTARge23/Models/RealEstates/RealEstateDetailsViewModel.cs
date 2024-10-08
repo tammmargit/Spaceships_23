@@ -1,8 +1,6 @@
-﻿using Microsoft.AspNetCore.Http;
-
-namespace ShopTARge23.Core.Dto
+﻿namespace ShopTARge23.Models.RealEstates
 {
-    public class RealEstateDto
+    public class RealEstateDetailsViewModel
     {
         public Guid? Id { get; set; }
         public double Size { get; set; }
