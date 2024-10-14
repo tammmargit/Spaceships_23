@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using ShopTARge23.Core.Dto;
 using ShopTARge23.Core.ServiceInterface;
 using ShopTARge23.Data;
@@ -80,12 +81,25 @@ namespace ShopTARge23.Controllers
         [HttpGet]
         public async Task<IActionResult> Details(Guid id)
         {
+            //tuua siia piltide  vaatamise funktsionaalsus
+
             var realEstate = await _realEstateServices.GetAsync(id);
 
             if (realEstate == null)
             {
                 return NotFound();
             }
+
+            var photos = await _context.FileToDatabases
+                .Where(x => x.RealEstateId == id)
+                .Select(y => new RealEstateImageViewModel
+                {
+                    RealEstateId = y.Id,
+                    ImageId = y.Id,
+                    ImageData = y.ImageData,
+                    ImageTitle = y.ImageTitle,
+                    Image = string.Format("data:image/gif;base64,{0}", Convert.ToBase64String(y.ImageData))
+                }).ToArrayAsync();
 
             var vm = new RealEstatesDetailsViewModel();
 
@@ -96,6 +110,7 @@ namespace ShopTARge23.Controllers
             vm.BuildingType = realEstate.BuildingType;
             vm.CreatedAt = realEstate.CreatedAt;
             vm.ModifiedAt = realEstate.ModifiedAt;
+            vm.Image.AddRange(photos);
 
             return View(vm);
         }
