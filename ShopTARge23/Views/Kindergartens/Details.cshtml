@@ -1,4 +1,5 @@
 ﻿@model ShopTARge23.Models.Kindergartens.KindergartenDetailsViewModel
+
 <h1>Details</h1>
 
 <div>
@@ -40,6 +41,11 @@
             @Html.DisplayFor(model => model.UpdatedAt)
         </div>
 
+        @foreach (var images in Model.Images)
+        {
+            <partial name="_Images" model="images" />
+        }
     </dl>
+
     <a asp-action="Index" asp-controller="kindergartens" class="btn btn-danger">Back</a>
 </div>
