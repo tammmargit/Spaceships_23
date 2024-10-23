@@ -8,6 +8,10 @@
         public string KindergartenName { get; set; }
         public string Teacher { get; set; }
 
+        public List<ImageViewModel> ImageViewModels { get; set; }
+            = new List<ImageViewModel>();
+
+
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
     }

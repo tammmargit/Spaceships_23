@@ -128,11 +128,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ruthp\\OneDrive\\Desktop\\makidev\\Spaceships\\ShopTARge23.Core\\ShopTARge23.Core.csproj",
+      "projectUniqueName": "C:\\Users\\ruthp\\OneDrive\\Desktop\\makidev\\Spaceships_23\\ShopTARge23.Core\\ShopTARge23.Core.csproj",
       "projectName": "ShopTARge23.Core",
-      "projectPath": "C:\\Users\\ruthp\\OneDrive\\Desktop\\makidev\\Spaceships\\ShopTARge23.Core\\ShopTARge23.Core.csproj",
+      "projectPath": "C:\\Users\\ruthp\\OneDrive\\Desktop\\makidev\\Spaceships_23\\ShopTARge23.Core\\ShopTARge23.Core.csproj",
       "packagesPath": "C:\\Users\\ruthp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ruthp\\OneDrive\\Desktop\\makidev\\Spaceships\\ShopTARge23.Core\\obj\\",
+      "outputPath": "C:\\Users\\ruthp\\OneDrive\\Desktop\\makidev\\Spaceships_23\\ShopTARge23.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

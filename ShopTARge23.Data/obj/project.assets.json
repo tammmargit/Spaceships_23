@@ -4169,11 +4169,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ruthp\\OneDrive\\Desktop\\makidev\\Spaceships\\ShopTARge23.Data\\ShopTARge23.Data.csproj",
+      "projectUniqueName": "C:\\Users\\ruthp\\OneDrive\\Desktop\\makidev\\Spaceships_23\\ShopTARge23.Data\\ShopTARge23.Data.csproj",
       "projectName": "ShopTARge23.Data",
-      "projectPath": "C:\\Users\\ruthp\\OneDrive\\Desktop\\makidev\\Spaceships\\ShopTARge23.Data\\ShopTARge23.Data.csproj",
+      "projectPath": "C:\\Users\\ruthp\\OneDrive\\Desktop\\makidev\\Spaceships_23\\ShopTARge23.Data\\ShopTARge23.Data.csproj",
       "packagesPath": "C:\\Users\\ruthp\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ruthp\\OneDrive\\Desktop\\makidev\\Spaceships\\ShopTARge23.Data\\obj\\",
+      "outputPath": "C:\\Users\\ruthp\\OneDrive\\Desktop\\makidev\\Spaceships_23\\ShopTARge23.Data\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4195,8 +4195,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\ruthp\\OneDrive\\Desktop\\makidev\\Spaceships\\ShopTARge23.Core\\ShopTARge23.Core.csproj": {
-              "projectPath": "C:\\Users\\ruthp\\OneDrive\\Desktop\\makidev\\Spaceships\\ShopTARge23.Core\\ShopTARge23.Core.csproj"
+            "C:\\Users\\ruthp\\OneDrive\\Desktop\\makidev\\Spaceships_23\\ShopTARge23.Core\\ShopTARge23.Core.csproj": {
+              "projectPath": "C:\\Users\\ruthp\\OneDrive\\Desktop\\makidev\\Spaceships_23\\ShopTARge23.Core\\ShopTARge23.Core.csproj"
             }
           }
         }
