@@ -1,4 +1,6 @@
-﻿namespace ShopTARge23.Models.Kindergartens
+﻿
+
+namespace ShopTARge23.Models.Kindergartens
 {
     public class KindergartensIndexViewModel
     {

@@ -1,6 +1,6 @@
 ﻿namespace ShopTARge23.Models.Kindergartens
 {
-    public class KindergartenDeleteViewModel
+    public class KindergartensDeleteViewModel
     {
         public Guid? Id { get; set; }
         public string GroupName { get; set; }
@@ -8,9 +8,8 @@
         public string KindergartenName { get; set; }
         public string Teacher { get; set; }
 
-        public List<ImageViewModel> ImageViewModels { get; set; }
-            = new List<ImageViewModel>();
-
+        public List<KindergartenImageViewModel> Image { get; set; }
+            = new List<KindergartenImageViewModel>();
 
         public DateTime CreatedAt { get; set; }
         public DateTime UpdatedAt { get; set; }
