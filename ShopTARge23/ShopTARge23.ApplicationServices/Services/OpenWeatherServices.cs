@@ -10,13 +10,12 @@ using System.Threading.Tasks;
 
 namespace ShopTARge23.ApplicationServices.Services
 {
-    public class OpenWeatherServices
+    public class OpenWeatherServices : IOpenWeatherServices
     {
-        //api key = 3838f6d77378b904e2784adbb7811565
-        //https://api.openweathermap.org/data/2.5/weather?q={CityName}&appid={ApiKey}&units=metric
+        //api key = 36ebd29d92db5369407a344f08389e32
         public async Task<OpenWeatherResultDto> OpenWeatherResult(OpenWeatherResultDto dto)
         {
-            string openApiKey = "3838f6d77378b904e2784adbb7811565";
+            string openApiKey = "36ebd29d92db5369407a344f08389e32\n";
             string url = $"https://api.openweathermap.org/data/2.5/weather?q={dto.City}&units=metric&appid={openApiKey}";
 
 
